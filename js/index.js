@@ -66,8 +66,11 @@ class Timer {
 const timer = new Timer({
     onTick: updateInterface,
 });
+
 refs.startBtn.addEventListener('click', timer.start.bind(timer));
+
 refs.stopBtn.addEventListener('click', timer.stop.bind(timer));
+
 function updateInterface({ days, hours, mins, secs }) {
     refs.days.textContent = `${days}`,
     refs.hours.textContent = `${hours}`,
