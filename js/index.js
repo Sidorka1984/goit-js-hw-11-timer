@@ -34,9 +34,9 @@ class Timer {
         this.isActive = true;
         this.intervalId = setInterval(() => {
             const currentTime = Date.now();
-            // console.log('curentTime', currentTime);
+           
             const deltaTime = currentTime - startTime;
-            // console.log('deltaTime', deltaTime);
+    
             const time = this.getTimeComponents(-deltaTime);
             this.onTick(time);
          
